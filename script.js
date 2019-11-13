@@ -19,7 +19,6 @@ function loadingStop() {
     loader.style.display = 'none';
     wrapper.style.display = 'flex';
 }
-
 Promise.all([getInfo, getDate])
     .then(([infoFromPromise, dateFromPromise]) => {
         userInfo = infoFromPromise;
